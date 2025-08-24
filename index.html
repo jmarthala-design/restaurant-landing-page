@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=WDXL+Lubrifont+TC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  <title>TasteBites Restaurant</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">TasteBites</h1>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h2>Where Flavor Meets Passion!!</h2>
+
+      <a href="#menu" class="btn">Explore Menu</a>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <!-- Menu Section -->
+<section id="menu" class="menu">
+  <h2>Our Menu</h2>
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="starters">Starters</button>
+    <button class="filter-btn" data-category="mains">Mains</button>
+    <button class="filter-btn" data-category="desserts">Desserts</button>
+    <button class="filter-btn" data-category="drinks">Drinks</button>
+  </div>
+
+  <div class="menu-items">
+    <!-- Starters -->
+    <div class="menu-card" data-category="starters">
+      <img src="images/salad.jpg" alt="Garden Salad">
+      <h3>Fresh Garden Salad</h3>
+      <p>Crispy greens with vinaigrette dressing.</p>
+    </div>
+    <div class="menu-card" data-category="starters">
+      <img src="images/soup.jpg" alt="Soup">
+      <h3>Tomato Basil Soup</h3>
+      <p>Rich, creamy soup with fresh basil.</p>
+    </div>
+
+    <!-- Mains -->
+    <div class="menu-card" data-category="mains">
+      <img src="images/steak.jpg" alt="Steak">
+      <h3>Grilled Steak</h3>
+      <p>Juicy steak with herbs and spices.</p>
+    </div>
+    <div class="menu-card" data-category="mains">
+      <img src="images/pasta.jpg" alt="Pasta">
+      <h3>Pasta Primavera</h3>
+      <p>Fresh veggies and pasta in creamy sauce.</p>
+    </div>
+
+    <!-- Desserts -->
+    <div class="menu-card" data-category="desserts">
+      <img src="images/cake.jpg" alt="Cake">
+      <h3>Chocolate Lava Cake</h3>
+      <p>Warm, gooey chocolate delight.</p>
+    </div>
+    <div class="menu-card" data-category="desserts">
+      <img src="images/cheesecake.jpg" alt="Cheesecake">
+      <h3>Strawberry Cheesecake</h3>
+      <p>Classic cheesecake topped with fresh berries.</p>
+    </div>
+
+    <!-- Drinks -->
+    <div class="menu-card" data-category="drinks">
+      <img src="images/coffee.jpg" alt="Coffee">
+      <h3>Signature Coffee</h3>
+      <p>Rich and aromatic brew.</p>
+    </div>
+    <div class="menu-card" data-category="drinks">
+      <img src="images/juice.jpg" alt="Juice">
+      <h3>Fresh Orange Juice</h3>
+      <p>100% squeezed oranges, no sugar added.</p>
+    </div>
+    <div class="menu-card" data-category="drinks">
+      <img src="images/cocktail.jpg" alt="Cocktail">
+      <h3>House Special Mocktail</h3>
+      <p>A refreshing mix of fruits and herbs.</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- About -->
+  <section id="about" class="about">
+    <div class="about-images">
+      <img src="images/kitchen.jpg" alt="Chef at work"  class="about-img main-img">
+      <img src="images/dish.jpg" alt="Signature Dish" class="about-img overlap-img">
+    </div>
+    <div class="about-text">
+      <h2>About Us</h2>
+      <p>Our restaurant was founded by a close-knit family with a shared passion for food and authentic flavors.
+        Recently opened, we’ve started by bringing you our top favorite dishes — carefully
+        crafted with love and premium ingredients. While our menu is still small,
+        every dish is made with dedication, and with your support, we look forward to adding many
+        more in the future. We’re a takeaway-only restaurant, here to serve you fresh, delicious meals
+        that feel like home.</p>
+    </div>
+  </section>
+
+
+  <!-- Testimonials -->
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+  <section id="testimonials" class="testimonials">
+    <h2>What Our Customers Say</h2>
+
+    <!-- Swiper -->
+    <div class="swiper testimonial-swiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide testimonial-card">
+          <p>“Quick, easy, and absolutely delicious! Perfect for weeknights when I don’t feel like cooking.”</p>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <h4>- Sarah M.</h4>
+        </div>
+
+        <div class="swiper-slide testimonial-card">
+          <p>“Loved the flavors! You can really taste the quality in every bite. This is my new go-to takeaway spot.”</p>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <h4>- Daniel R.</h4>
+        </div>
+
+        <div class="swiper-slide testimonial-card">
+          <p>“Fast service, generous portions, and super tasty. Can’t wait to see more dishes added to the menu!”</p>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <h4>- Priya K.</h4>
+        </div>
+
+      </div>
+
+      <!-- Pagination Dots -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+  var swiper = new Swiper(".testimonial-swiper", {
+  loop: true,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    0: { slidesPerView: 1 },      // 1 card on mobile
+    768: { slidesPerView: 2, spaceBetween: 30 } // 2 cards on tablet/desktop
+  }
+});
+
+
+  </script>
+
+
+  <!-- Contact -->
+  <!-- Contact / Enquiry -->
+  <section class="contact" id="contact">
+  <div class="contact-container">
+    <h2>Get in Touch</h2>
+    <p>Questions, feedback, or want to place an order? We’d love to hear from you.</p>
+
+    <form class="contact-form" novalidate>
+      <div class="form-row">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+      </div>
+      <div class="form-row">
+        <input type="tel" placeholder="Phone (optional)">
+      </div>
+      <div class="form-row">
+        <textarea rows="5" placeholder="Your Message..."></textarea>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+  <div class="footer-container">
+    <!-- Brand -->
+    <div class="footer-brand">
+      <h2>TasteBites</h2>
+      <p>Bringing authentic flavors, freshly made for you to enjoy anywhere.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact / Socials -->
+    <div class="footer-contact">
+      <h3>Get in Touch</h3>
+      <p>Email: <a href="mailto:order@tastebitestakeaway.com">order@tastebitestakeaway.com</a></p>
+      <p>Phone: <a href="tel:+44 8597 238221">+44 8597 238221</a></p>
+
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 TasteBites. All rights reserved.</p>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
